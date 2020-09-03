@@ -1,13 +1,68 @@
-.body{
-  background: gold;
-}
 .hello {
   font: 15px Helvetica, Arial, sans-serif;
-  background: #eee;
+  background: #ebe050;
   padding: 100px;
   text-align: center;
   transition: 100ms ease-in background;
 }
 .hello:hover {
-  background: #ccc;
+  background: #5107f5;
+}
+.title{
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 3px 4px rgba(0, 0, 0, 0.39);
+  
+}
+.input {
+  width: 100%;
+  line-height: 50px;
+  text-indent: 10px;
+  font-size: 1.2em;
+}
+.button {
+  background-color: #428bca;
+  border: none;
+  padding: 20px;
+  color: #fff;
+  border-radius: 30px;
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: 100;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+}
+.ul{
+  width: 50%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  list-style: none;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+}
+.li {
+  margin: 10px;
+  font-size: 1.8em;
+  font-style: italic;
+}
+.remove {
+  background-color: #d9534f;
+  border: none;
+  padding: 5px;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 0.9em;
+  font-weight: 100;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  margin-left: 37%;
+  box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
 }

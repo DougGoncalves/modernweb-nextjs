@@ -10,14 +10,24 @@ export default () => {
   }
   return(
     <>
+       <style jsx global>{`
+      body {
+        background-color: #000;
+      }
+      `}</style>
       <div className={styles.hello}>
-       <h1>Lista de Tarefas</h1>
-        <input value={todo} onChange={(e) => setTodo(e.target.value)}/>
-        <button onClick={()=> setTodos([...todos, todo])}>Adicionar</button>
+       <h1 className={styles.title}>Lista de Tarefas</h1>
+        <input className={styles.input} value={todo} onChange={(e) => setTodo(e.target.value)}/>
+        <button className={styles.button} onClick={()=> setTodos([...todos, todo])}> + Nova Tarefa</button>
         {todos.map(todo =>(
           <>
-            <h1>{todo}</h1>
-            <button onClick={()=> removeTodo(todo)}> Remover</button>
+            <ul className={styles.ul}> 
+              <li className={styles.li}>
+                {todo}
+                
+              </li>
+              <button className={styles.remove} onClick={()=> removeTodo(todo)}>Remover</button>
+            </ul> 
           </>
         ))}
       </div>
